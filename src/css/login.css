@@ -1,0 +1,526 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    width           : 100%;
+    background-color: #F4F6F9;
+    font-family     : SFS, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color          : #0070d2;
+    font-size      : 12px;
+}
+
+a.primary,
+a.primary:link,
+a.primary:visited,
+a.primary:hover,
+a.primary:active {
+    color: white;
+}
+
+div#app {
+    width : 100%;
+    height: 100vh;
+}
+
+div.app_container {
+    display: table;
+    width  : 100%;
+    height : 100vh;
+}
+
+div#left {
+    display: table-cell;
+    width  : 50%;
+    height : 100%;
+}
+
+div#right {
+    display         : table-cell;
+    width           : 50%;
+    height          : 100%;
+    background-color: white;
+    vertical-align  : top;
+    text-align      : center;
+}
+
+div#main {
+    overflow: auto;
+}
+
+div#wrapper {
+    padding   : 50px 0 0 0;
+    margin    : 0 auto;
+    max-width : 400px;
+    transition: all 0.25s ease 0s;
+}
+
+div#logo_wrapper {
+    padding : 0 0 50px 0;
+    margin  : 0 auto;
+    display : table;
+    height  : 120px;
+    width   : 120px;
+    overflow: hidden;
+}
+
+div#content {
+    margin          : 0 auto;
+    margin-bottom   : 24px;
+    padding         : 20px;
+    border-radius   : 0.25rem;
+    border          : 1px solid gainsboro;
+    background-color: #ffffff;
+    color           : darkgrey;
+    overflow        : hidden;
+    min-height      : 250px;
+    position        : relative;
+}
+
+div#signincontent,
+div#signupcontent {
+    background-color: #ffffff;
+}
+
+h3#title {
+    margin-bottom: 20px;
+    color        : black;
+}
+
+div#tosignin_wrapper {
+    margin-bottom  : 24px;
+    color          : black;
+    display        : flex;
+    justify-content: space-between;
+}
+
+div#tosignin {
+    margin-right: 12px;
+    cursor      : pointer;
+    display     : flex;
+}
+
+div#tosignin::before {
+    content     : "\f190";
+    font-family : "FONTAWESOME";
+    font-size   : 20px;
+    margin-right: 12px;
+}
+
+div#signup {
+    margin-top: 24px;
+    display   : block;
+    font-size : 12px;
+}
+
+div#signup>div {
+    display: inline-block;
+    color  : gray;
+}
+
+div#signinform_wrapper {
+    max-height: 300px;
+}
+
+div.container {
+    display       : flex;
+    width         : 100%;
+    height        : 100%;
+    flex-direction: column;
+}
+
+div#formmesssage {
+    margin-bottom: 20px;
+    border-radius: 0.25rem;
+    padding      : 10px;
+    font-size    : 14px;
+    font-weight  : 100;
+    display      : none;
+    color        : #105110;
+    background   : #98eb98;
+    border       : 1px solid #18a618;
+}
+
+div#formmesssage.error-message {
+    color     : #ffffff;
+    background: #fd5252c7;
+    border    : 1px solid crimson;
+}
+
+div.promo_wrapper {
+    margin    : 16px 0px;
+    color     : darkslategrey;
+    text-align: left;
+    display   : table-row;
+}
+
+div.promo {
+    padding: 0 16px;
+}
+
+div.promo>h1,
+div.promo>h3 {
+    margin-bottom: 15px;
+}
+
+div.slideshow-container {
+    width     : 100%;
+    max-width : 1000px;
+    min-height: 500px;
+    position  : relative;
+    margin    : auto;
+}
+
+#prev,
+#next {
+    cursor     : pointer;
+    position   : absolute;
+    top        : 50%;
+    width      : auto;
+    padding    : 16px;
+    margin-top : -22px;
+    font-weight: bold;
+    font-size  : 18px;
+    transition : 0.6s ease;
+    user-select: none;
+}
+
+#prev {
+    left         : 0;
+    border-radius: 0 3px 3px 0;
+}
+
+#next {
+    right        : 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#prev:hover,
+#next:hover {
+    background-color: rgba(30, 144, 255, 0.8);
+    color           : white;
+}
+
+.slides {
+    display: none;
+    height : 500px;
+    width  : 500px;
+}
+
+.fade {
+    animation-name    : fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.links {
+    border-top     : 1px solid gainsboro;
+    padding        : 15px 0 0 0;
+    margin-bottom  : 1rem;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+}
+
+.links a {
+    margin-bottom: 5px;
+}
+
+a#signupbtn {
+    padding: 12px 32px;
+}
+
+input {
+    outline: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.wrap {
+    height    : 100%;
+    min-height: 100%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.floatright {
+    float: right;
+}
+
+.floatleft {
+    float: left;
+}
+
+.visible {
+    display   : block;
+    visibility: visible;
+}
+
+.hidden {
+    display   : none;
+    visibility: hidden;
+    transition: display 5s ease-out 5s;
+}
+
+.button {
+    padding        : 12px 24px;
+    border-radius  : 4px;
+    box-sizing     : border-box;
+    cursor         : pointer;
+    text-decoration: none;
+    color          : white;
+    font-size      : 12px;
+    margin-bottom  : 1rem;
+}
+
+.button.btnsecondary {
+    color           : dodgerblue;
+    background-color: white;
+    border-radius   : 0.25rem;
+    border          : 1px solid gainsboro;
+}
+
+.button.btnprimary {
+    color           : white;
+    background-color: dodgerblue;
+    border-radius   : 0.25rem;
+    border          : 1px solid gainsboro;
+    font-weight     : 700;
+}
+
+.button.btnprimary:hover,
+.button.btnprimary:focus {
+    background-color: rgb(0, 95, 178);
+}
+
+.form-inputgroup {
+    position: relative;
+}
+
+label {
+    font-size  : 12px;
+    color      : #54698d;
+    margin     : 0 0 8px 0;
+    line-height: inherit;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border             : 1px solid #D8DDE6;
+    border-radius      : 4px;
+    border-image-source: initial;
+    border-image-slice : initial;
+    border-image-width : initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color   : #fff;
+    font-family        : SFS, Arial, sans-serif;
+    box-sizing         : border-box;
+    -webkit-appearance : none;
+    font-size          : .8125rem;
+    transition         : all 0.1s;
+    width              : 100%;
+    padding            : 12px;
+    margin-top         : 0.5rem;
+    margin-bottom      : 1rem;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: rgb(255, 255, 255);
+    border          : 1px solid rgb(21, 137, 238);
+    outline         : 0px;
+    box-shadow      : rgb(0, 112, 210) 0px 0px 3px;
+}
+
+.password-focus {
+    border: 1px solid rgb(21, 137, 238);
+}
+
+div#load-mask {
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    bottom         : 0;
+    right          : 0;
+    background     : white;
+    opacity        : 0.5;
+    z-index        : 100;
+    display        : flex;
+    align-content  : center;
+    justify-content: center;
+    align-items    : center;
+}
+
+.circle-spinner {
+    vertical-align           : middle;
+    margin                   : 0px;
+    width                    : 14px;
+    height                   : 14px;
+    border                   : 2px solid transparent;
+    border-radius            : 50%;
+    border-left-color        : dodgerblue;
+    animation-name           : loader-spin;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animated {
+    animation-duration               : 1s;
+    animation-fill-mode              : both;
+    -webkit-animation-duration       : .3s;
+    -webkit-animation-fill-mode      : both;
+    animation-timing-function        : cubic-bezier(.5, 0, .5, 1);
+    -webkit-animation-timing-function: cubic-bezier(.5, 0, .5, 1);
+}
+
+@keyframes loader-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        opacity          : 0;
+        transform        : translate3d(-100%, 0, 0)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        opacity          : 1;
+        transform        : translateZ(0)
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        opacity          : 0;
+        transform        : translate3d(-100%, 0, 0)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        opacity          : 1;
+        transform        : translateZ(0)
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name        : fadeInLeft
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        opacity          : 0;
+        transform        : translate3d(100%, 0, 0)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        opacity          : 1;
+        transform        : translateZ(0)
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        opacity          : 0;
+        transform        : translate3d(100%, 0, 0)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        opacity          : 1;
+        transform        : translateZ(0)
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name        : fadeInRight
+}
+
+@-webkit-keyframes fadeOutLeft {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        opacity          : 0;
+        transform        : translate3d(-100%, 0, 0)
+    }
+}
+
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        opacity          : 0;
+        transform        : translate3d(-100%, 0, 0)
+    }
+}
+
+.fadeOutLeft {
+    -webkit-animation-name: fadeOutLeft;
+    animation-name        : fadeOutLeft;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    div#left {
+        width: 100%
+    }
+
+    div#right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div#wrapper {
+        padding-left : 35px;
+        padding-right: 35px;
+    }
+}

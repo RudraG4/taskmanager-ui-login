@@ -1,0 +1,29 @@
+{
+  "name": "taskmanager-ui",
+  "version": "1.0.0",
+  "description": "",
+  "source": "/dist/index.html",
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "scripts": {
+    "start": "rimraf dist && parcel src/index.html -p 3000",
+    "build": "rimraf dist && parcel build src/index.html -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RudraG4/taskmanager-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RudraG4/taskmanager-ui/issues"
+  },
+  "homepage": "https://github.com/RudraG4/taskmanager-ui#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2"
+  }
+}

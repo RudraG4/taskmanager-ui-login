@@ -1,0 +1,13 @@
+/node_modules
+.env
+/.cache
+/.vscode
+/.history
+/dist
+
+#temporary
+/src/script
+/src/components/board.js
+/src/components/taskcard.js
+/src/css/board.css
+/src/views
