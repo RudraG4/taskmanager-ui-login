@@ -1,4 +1,4 @@
-name: taskmanager-api CI
+name: taskmanager-ui-login CI
 
 on:
   push:

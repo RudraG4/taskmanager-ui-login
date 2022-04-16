@@ -35,7 +35,7 @@ export default {
                     }
                 } catch (error) {
                     formmesssage.style.display = 'block'
-                    formmesssage.textContent = error?.response?.data?.error || 'Error intiating Reset Password. Please try again later'
+                    formmesssage.textContent = error && error.response && error.response.data && error.response.data.error || 'Error intiating Reset Password. Please try again later'
                     formmesssage.classList.add('error-message')
                 }
                 mask.hideMask()
@@ -71,7 +71,7 @@ export default {
                     }
                 } catch (error) {
                     formmesssage.style.display = 'block'
-                    formmesssage.textContent = error?.response?.data?.error || 'Error resetting Password. Please try again later'
+                    // formmesssage.textContent = error?.response?.data?.error || 'Error resetting Password. Please try again later'
                     formmesssage.classList.add('error-message')
                 }
                 mask.hideMask()

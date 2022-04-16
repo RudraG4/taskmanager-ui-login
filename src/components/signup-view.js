@@ -37,7 +37,7 @@ export default {
                     }
                 } catch (error) {
                     formmesssage.style.display = 'block'
-                    formmesssage.textContent = error?.response?.data?.error || 'Error Signing Up. Please try again later'
+                    formmesssage.textContent =  error && error.response && error.response.data && error.response.data.error || 'Error Signing Up. Please try again later'
                     formmesssage.classList.add('error-message')
                 }
                 mask.hideMask()
