@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RudraG4/taskmanager-ui.git"
+    "url": "git+https://github.com/RudraG4/taskmanager-ui-login.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RudraG4/taskmanager-ui/issues"
+    "url": "https://github.com/RudraG4/taskmanager-ui-login/issues"
   },
-  "homepage": "https://github.com/RudraG4/taskmanager-ui#readme",
+  "homepage": "https://github.com/RudraG4/taskmanager-ui-login#readme",
   "dependencies": {
     "axios": "^0.26.1",
     "parcel-bundler": "^1.12.5",
